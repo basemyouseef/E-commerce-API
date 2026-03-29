@@ -5,5 +5,6 @@ import flowbiteReact from "flowbite-react/plugin/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/E-commerce-API/",   // ← دي أهم حاجة
   plugins: [react(), tailwindcss(), flowbiteReact()],
 });
