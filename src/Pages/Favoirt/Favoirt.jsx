@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Product from '../../Componetes/SlideProduct/Product'
 import Loader from '../Home/Loader'
+import PageMotion from '../../Componetes/PageMotion'
 import { CartContext } from '../../Componetes/CartContext/CartContext'
 
 function Favoirt() {
@@ -9,6 +10,7 @@ function Favoirt() {
 const{cartIFav}=useContext(CartContext)
 
   return (
+     <PageMotion type='bounce'>
     <div className="catogry_Page">
       <div className="container">
         <div className="top_slideP">
@@ -32,6 +34,7 @@ const{cartIFav}=useContext(CartContext)
         </div>
       </div>
     </div>
+    </PageMotion>
   )
 }
 
