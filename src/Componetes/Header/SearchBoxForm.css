@@ -5,11 +5,13 @@
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
+  z-index: 100000;
 }
 
 .search {
   align-items: center;
   gap: 8px;
+  z-index: 100000;
 }
 
 .search .input {

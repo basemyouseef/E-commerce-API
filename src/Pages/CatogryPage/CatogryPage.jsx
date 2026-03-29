@@ -3,7 +3,7 @@ import './CatogryPage.css'
 import { useParams } from 'react-router-dom'
 import Product from '../../Componetes/SlideProduct/Product'
 import Loader from '../Home/Loader'
-
+import PageMotion from '../../Componetes/PageMotion'
 function CatogryPage() {
   const [catogryProduct, setCatogryProduct] = useState([])
   const { catogry } = useParams()
@@ -19,6 +19,7 @@ function CatogryPage() {
   }, [catogry])
 
   return (
+         <PageMotion type='bounce'>
     <div className="catogry_Page">
       <div className="container">
         <div className="top_slideP">
@@ -47,6 +48,8 @@ function CatogryPage() {
         </div>
       </div>
     </div>
+         </PageMotion>
+
   )
 }
 
