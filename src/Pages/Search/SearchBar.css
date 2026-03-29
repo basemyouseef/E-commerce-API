@@ -1,0 +1,21 @@
+.my-Search{
+  margin-top: 70px;
+}
+.product{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.product-card{
+
+}
+.product .favorite-btn.isIn-Fav {
+    background: #e63946;
+    color: #fff;
+    right: 0;
+}
+.product .search button svg{
+  background-color: tr;
+}

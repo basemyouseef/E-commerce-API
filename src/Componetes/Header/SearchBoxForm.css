@@ -1,0 +1,78 @@
+/* SearchBoxForm.css */
+
+.Search {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.search {
+  align-items: center;
+  gap: 8px;
+}
+
+.search .input {
+  transition: all 0.3s ease;
+}
+
+.search button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #3b82f6; /* Tailwind blue-500 */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search button:hover {
+  background: #2563eb; /* Tailwind blue-600 */
+}
+
+.suggition_List {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 8px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.suggition_List li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.suggition_List li:hover {
+  background: #f3f4f6; /* Tailwind gray-100 */
+}
+
+.suggition_List img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.suggition_List span {
+  font-weight: 600;
+  color: #111827; /* Tailwind gray-900 */
+}
+
+.suggition_List p {
+  font-size: 0.85rem;
+  color: #6b7280; /* Tailwind gray-500 */
+}

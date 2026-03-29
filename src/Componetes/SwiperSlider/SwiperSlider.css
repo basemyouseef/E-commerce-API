@@ -1,0 +1,63 @@
+:root{
+  --main_color:#0090f0;
+  --p_color:#7b7b7b;
+  --bg_color:#f3f3f3;
+  --white_color:#fff;
+  --color_heading:#253237;
+  --border_color:#d6d6d6d5;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero{
+    position: relative;
+    margin-top: 80px;
+}
+.hero .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+    cursor: pointer;
+    display: block;
+}
+.hero .content h4{
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    font-style: italic;
+    margin-bottom: 0.4vw;
+    font-weight: normal;
+}
+.hero .content h3{
+    text-transform: capitalize;
+    font-size: 3vw;
+    font-style: italic;
+    margin-bottom: 30px;
+    line-height: 1.1;
+    font-weight: bolder;
+    color: var(--main_color);
+    line-height: 1.1;
+}
+.hero .content  p{
+    margin-top: 2.4vw;
+    margin-bottom: 2.4vw;
+    font-size: 2vw;
+}
