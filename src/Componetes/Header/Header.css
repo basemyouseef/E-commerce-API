@@ -86,15 +86,22 @@ font-size: 30px;
     justify-content: center;
 
 }
-@media (max-width: 500px){
+@media (max-width:500px){
 .top_header .container .my_icons .icons svg{
 font-size: 30px;
 }
+
 .top_header .container .my_icons .icons .fav{
   width: 35px;
   height: 35px;
 }
+.search{
+width: 173;
 }
+}
+
+
+
 .search input{
   width: 400px;
 } 
@@ -168,9 +175,11 @@ height: 45px;
 /* للشاشات الصغيرة (موبايل) */
 @media (max-width: 576px) {
   .top_header .container {
-    gap: 10px;
+    gap: 1px;
+    
   }
 .Search{
+  
   
 }
   .top_header .container .logo {
